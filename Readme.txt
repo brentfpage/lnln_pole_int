@@ -4,7 +4,13 @@ This program, lnln-pole-int, computes
     ⎮    ────────────── dx
     ⌡         f+x 
     xlb 
-for complex-valued parameters a, c, and f.
+for complex-valued parameters a, c, and f,
+which arises in the course of evaluating
+ xub         Re(a)                Re(c)
+⌠        1  ⌠             1      ⌠             1
+⎮    dx ─── ⎮      dy─────────── ⎮      dz─────────── .
+⌡       f+x ⌡        x+y+i*Im(a) ⌡        x+z+i*Im(c)
+ xlb
 
 Details of the computation are given in lnln_pole_int_doc.pdf
 
